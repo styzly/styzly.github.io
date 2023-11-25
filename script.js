@@ -1,6 +1,6 @@
 
 var ctrl_play_pause = true;
-var audio = new Audio('music/DM_20231104204653_001.m4a');
+var audio = new Audio('DM_20231104204653_001.m4a');
 
 $("#play").click(function(){
     console.log('被点击了');
@@ -20,17 +20,17 @@ $("#play").click(function(){
 
 $("#next").click(function(){
     audio.pause();
-    audio = new Audio('music/DM_20231125154305_001.mp3');
+    audio = new Audio('DM_20231125154305_001.mp3');
     audio.play();
     console.log('next');
 })
 
 document.querySelector('#tfimg').addEventListener('mouseover', function(){
     console.log('更换图片');
-    this.src = "image/R-C.gif";
+    this.src = "R-C.gif";
 })
 
 document.querySelector('#tfimg').addEventListener('mouseleave', function(){
     console.log('更换图片');
-    this.src = "image/IMG_20231125_155422.jpg";
+    this.src = "IMG_20231125_155422.jpg";
 })
