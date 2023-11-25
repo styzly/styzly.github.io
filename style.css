@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont/iconfont.woff2?t=1700893382756') format('woff2'),
+         url('iconfont/iconfont.woff?t=1700893382756') format('woff'),
+         url('iconfont/iconfont.ttf?t=1700893382756') format('truetype');
+  }
+
+
+:root {
+     /* 页面全局背景颜色 */
+    --glode-bgcolor: #e0e0e0;
+    --in-box-width: 251px;
+    --in-box-height: 128px;
+    --in-box-radio: 21px;
+    --in-box-bgcolor: #191414;
+    --icon-size: 35px;
+}
+
+body {
+    background-color: var(--glode-bgcolor);
+    font-family: '楷体';
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.out-box {
+    height: 500px;
+    font-size: 18px;
+    padding: 150px;
+    box-sizing: border-box;
+}
+.in-box {
+    position: relative;
+    width: var(--in-box-width);
+    height: var(--in-box-height);
+    background-color: var(--in-box-bgcolor);
+    margin: 0 auto;
+    border-radius: var(--in-box-radio);
+}
+
+.icon{
+    font-family: "iconfont";
+    color: orange;
+    font-size: var(--icon-size);
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #438cff;
+}
+
+#conbination {
+    position: absolute;
+    text-align: center;
+    left: 67px;
+    bottom: 11px;
+}
+
+#tfimg {
+    position: absolute;
+    top: 3px;
+    left: 90px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid pink;
+}
