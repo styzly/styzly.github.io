@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>居中弹窗示例</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-  <div class="overlay">
-    <div class="popup">
-      <h2>这是一个弹窗</h2>
-      <p>你可以在这里添加你的内容。</p>
-      <button id="closeBtn">关闭</button>
-      <button id="openBtn">打开</button>
+    <div class="out-box">
+        <div class="in-box">
+            <img id="tfimg" src="image/IMG_20231125_155422.jpg" alt="Rotating Image">
+            <div id="conbination">
+                <a href="javascript:;" id="prev">
+                    <span class="icon">&#xe62f;</span>
+                </a>
+                <a href="javascript:;" id="play">
+                    <span class="icon">&#xe630;</span>
+                </a>
+                <a href="javascript:;" id="next">
+                    <span class="icon">&#xe62e;</span>
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
 
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
